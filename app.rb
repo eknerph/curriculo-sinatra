@@ -1,7 +1,7 @@
 # app.rb
 require 'sinatra'
 
-# Habilitando o uso de arquivos estáticos (CSS)
+# Habilitando o uso de arquivos estáticos (CSS) ++
 set :public_folder, 'public'
 
 # Página inicial
