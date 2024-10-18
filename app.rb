@@ -24,7 +24,7 @@ end
 get '/experiencia' do
     <<-HTML
     <link rel="stylesheet" type="text/css" href="/styles.css">
-    <div class="conteiner">
+    <div class="container">
         <h2>Experiência Profissional</h2>
         <ul>
             <li>Desenvolvedor na Empresa X (2001 - Presente)</li>
@@ -38,8 +38,8 @@ end
 # Seção de Educação
 get '/educacao' do
     <<-HTML
-        <link rel="stylessheet" type="text/css" href="/styles.css">
-        <div class="container">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <div class="container">
         <h2>Educação</h2>
         <ul>
             <li>Bacharelado em Ciência da Computação - Univercidade Cruzeiro do Sul (2023 - 2025)</li>
@@ -52,22 +52,28 @@ end
 # Seção de Habilidades
 get '/habilidades' do
     <<-HTML
-    <h2>Habilidades</h2>
-    <ul>
-        <li>Ruby, Sinatra, HTML, CSS</li>
-        <li>Banco de Dados (PostgreSQL, MySQL)</li>
-        <li>Git e Controle de Versão</li>
-    </ul>
-    <a href="/">Voltar</a>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <div class="container">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Ruby, Sinatra, HTML, CSS</li>
+            <li>Banco de Dados (PostgreSQL, MySQL)</li>
+            <li>Git e Controle de Versão</li>
+        </ul>
+        <a href="/" class="voltar">Voltar</a>
+    </div>
     HTML
 end
 
 # Seção Contato
 get '/contato' do
     <<-HTML
-    <h2>Contato</h2>
-    <p>Email: eknerph@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/eknereaa" target="_blank">Meu Perfil</a></p> 
-    <a href="/">Voltar</a>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <div class="container">
+        <h2>Contato</h2>
+        <p>Email: eknerph@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/eknereaa" target="_blank">Meu Perfil</a></p> 
+        <a href="/" class="voltar">Voltar</a>
+    </div>
     HTML
 end
