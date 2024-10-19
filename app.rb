@@ -8,15 +8,23 @@ set :public_folder, 'public'
 get '/' do
     <<-HTML
     <link rel="stylesheet"  type="text/css" href="/styles.css">
-    <div class="container">
-        <h1>Meu Portifólio</h1>
-        <ul>
-            <li><a href="/experiencia">Experiência</a></li>
-            <li><a href="/educacao">Educação</a></li>
-            <li><a href="/habilidades">Habilidades</a></li>
-            <li><a href="/contato">Contato</a></li>
-        </ul>
-    </div>
+    <div class="header">
+        <div class="profile-container">
+            <div class="profile-photo"
+                <img src="https://via.placeholder.com/300" alt="Foto do perfil">
+            </div>
+            <div class="profile-info">            
+                <h1>Ekner Alexandre de Almeida</h1>
+                <h2>Desenvolvedor</h2>
+                <p><strong>LinkedIn:</strong> www.linkedin.com/in/eknereaa</p>
+                <p><strong>Github:</strong> https://github.com/eknerph</p>
+                <p><strong>E-mail:</strong> eknerph@gmail.com</p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedIn"></i></a>
+
+            
+        </div>
     HTML
 end
 

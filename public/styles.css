@@ -4,13 +4,83 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://source.unsplash.com/1600x900/?abstract,pattern'); /* Background dinâmico */
+    background-image: url('https://media.istockphoto.com/id/952039816/pt/foto/futuristic-digital-blockchain-background-fintech-technology.jpg?s=1024x1024&w=is&k=20&c=DVpdIf7rCobbXpD9UMn6YxiEv1kEnuj9yhpIMWtzHrI='); /* Background dinâmico */
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /*Mantém o fundo caso a imagem falhe*/
 }
 
+/*Estilo para o cabeçalho principal */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://source.unplash.com/10600x900/?architecture'); /* Sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para a foto de perfil */
+.profile-photo {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para as informações pessoais */
+.profile-info {
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h1 {
+    margin: 0;
+    color: #003366;
+    font-size: 2em;
+}
+
+.profile-info h2 {
+    margin: 5px 0 20px;
+    font-size: 1.2em;
+    color: #0066cc;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+/* Links sociais */
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #0066cc;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #004999;
+}
+
+
+
+/* Primeiro estilo inserido */
 /* Estilo para o container principal */
 .container {
     background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
@@ -62,3 +132,4 @@ a.voltar {
     text-align: center;
     margin-top: 20px;
 }
+
