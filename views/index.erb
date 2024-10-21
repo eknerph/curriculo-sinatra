@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo Web</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seções do Site -->
+  <section id="quem-sou-eu">
+    <h1>Quem sou eu</h1>
+    <p>Sou um(a) profissional apaixonado(a) por...</p>
+  </section>
+
+  <section id="experiencias">
+    <h1>Experiências</h1>
+    <p>Aqui você pode listar suas experiências profissionais relevantes.</p>
+  </section>
+
+  <section id="formacao">
+    <h1>Formação</h1>
+    <p>Liste suas formações acadêmicas e cursos relevantes.</p>
+  </section>
+
+  <section id="habilidades">
+    <h1>Habilidades</h1>
+    <p>Fale sobre suas habilidades técnicas e interpessoais.</p>
+  </section>
+
+  <section id="especialidades">
+    <h1>Especialidades</h1>
+    <p>Quais são suas áreas de especialização? Coloque aqui!</p>
+  </section>
+
+  <section id="contato">
+    <h1>Contato</h1>
+    <p>Telefone: (11) 1234-5678</p>
+    <p>Email: contato@meusite.com</p>
+  </section>
+
+</body>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 70;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+
+</html>

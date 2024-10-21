@@ -1,16 +1,20 @@
 /* public/styles.css ++*/
 
-/* Define o plano de fundo */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://media.istockphoto.com/id/952039816/pt/foto/futuristic-digital-blockchain-background-fintech-technology.jpg?s=1024x1024&w=is&k=20&c=DVpdIf7rCobbXpD9UMn6YxiEv1kEnuj9yhpIMWtzHrI='); /* Background dinâmico */
-    background-size: cover;
-    background-attachment: fixed;
+/* Reset básico para garantir consistência */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /*Mantém o fundo caso a imagem falhe*/
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Suaviza o scroll */
 }
+
+/* Estilo do corpo */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
 
 /*Estilo para o cabeçalho principal */
 .header {
@@ -18,118 +22,131 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://source.unplash.com/10600x900/?architecture'); /* Sua imagem de fundo */
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/14/11/33/earth-3537401_960_720.jpg'); /* Sua imagem de fundo */
     background-size: cover;
     background-position: center;
+
+    background-color: #1a73e8;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Estilo para a foto de perfil */
-.profile-photo {
+/* Container para o perfil */
+.profile-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  /* Estilo da foto de perfil */
+  .profile-photo {
     width: 40%;
     margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
-}
-
-.profile-photo img {
+  }
+  
+  .profile-photo img {
     width: 100%;
     height: auto;
-}
-
-/* Estilo para as informações pessoais */
-.profile-info {
+  }
+  
+  /* Informações do perfil */
+  .profile-info {
     width: 60%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.profile-info h1 {
+  }
+  
+  .profile-info h1 {
     margin: 0;
     color: #003366;
     font-size: 2em;
-}
-
-.profile-info h2 {
+  }
+  
+  .profile-info h2 {
     margin: 5px 0 20px;
     font-size: 1.2em;
     color: #0066cc;
-}
-
-.profile-info p {
+  }
+  
+  .profile-info p {
     margin: 5px 0;
-}
-
-/* Links sociais */
-.social-links {
+  }
+  
+  /* Links sociais */
+  .social-links {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
-}
-
-.social-links a {
+  }
+  
+  .social-links a {
     text-decoration: none;
     font-size: 1.5em;
     color: #0066cc;
     transition: color 0.3s;
-}
-
-.social-links a:hover {
+  }
+  
+  .social-links a:hover {
     color: #004999;
-}
+  }
 
+/*Estilo responsivo*/
 
-
-/* Primeiro estilo inserido */
-/* Estilo para o container principal */
-.container {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-/* Estilo para títulos */
-h1, h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Menu de navegação (em linha) */
-ul {
+nav ul {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 0;
+    justify-content: center;
     list-style: none;
-    background-color: #0066CC;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin: 10px;
-}
-
-a {
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Seções */
+  section {
+    padding: 100px 20px;
+    min-height: 100vh; /* Cada seção ocupará a tela inteira */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Cores alternadas para seções */
+  #quem-sou-eu { background-color: #e3f2fd; }
+  #experiencias { background-color: #bbdefb; }
+  #formacao { background-color: #90caf9; }
+  #habilidades { background-color: #64b5f6; }
+  #especialidades { background-color: #42a5f5; }
+  #contato { background-color: #2196f3; color: white; }
+  
+  /* Espaçamento para evitar que o conteúdo fique escondido sob o cabeçalho fixo */
+  section {
+    margin-top: 60px;
+  }
 
-a:hover {
-    background-color: #004999;
-    border-radius: 5px;
-}
+  nav ul li a.active {
+    text-decoration: underline;
+    color: yellow;
+  }
 
-/* Estilo para links "Voltar" */
-a.voltar {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-}
 
