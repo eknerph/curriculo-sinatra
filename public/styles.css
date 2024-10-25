@@ -35,4 +35,31 @@ nav ul li a {
   font-weight: bold;
 }
 
-na
+nav ul li a:houver {
+  text-decoration: underline;
+}
+
+/* Seção Inicial */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #E0E7FF;
+  min-height: 100vh;
+}
+
+.profile-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin: 10px 0;
+}
+
+
+
+
