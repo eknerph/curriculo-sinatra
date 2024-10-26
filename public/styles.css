@@ -56,10 +56,30 @@ nav ul li a:houver {
   object-fit: cover;
 }
 
-.profile h2 {
+.profile-info h2 {
   margin: 10px 0;
 }
 
+/* Seções */
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #00274D;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #00274D;
+  color: white;
+  position: relative;
+}
 
 
 

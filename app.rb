@@ -1,13 +1,15 @@
 # app.rb
 require 'sinatra'
 
+
+
 # Define a pasta pública para arquivos CSS e imagens
 set :public_folder, File.dirname(__FILE__) + '/public'
 
 
 # Página inicial currículo
 get '/' do
-
+    
     <<-HTML
     <link rel="stylesheet"  type="text/css" href="/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -15,7 +17,7 @@ get '/' do
     <div class="header">
         <div class="profile-container">
             <div class="profile-photo">
-                <img src="/ekner_picture.png" alt="Foto do perfil" />
+                <img src="/fotoekner_002" alt="Foto do perfil" />
             </div>
             <div class="profile-info">
                 <h1>Ekner Alexandre de Almeida</h1>
@@ -36,4 +38,6 @@ get '/' do
     </div>    
     HTML
 end
+
+
 
