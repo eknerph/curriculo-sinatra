@@ -10,104 +10,45 @@
 
   <!-- Cabeçalho de Navegação-->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
-        <li><a href="#experiencias">Experiências</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#especialidades">Especialidades</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <h1>Meu Portifólio</h1>
   </header>
-
-  <!-- Seções do Site -->
-  <section class="intro">
-    <div class="profile-photo">
-      <img src="/fotoekner_02.jpg" alt="Photo do Perfil">
-    </div> 
-    <div class="profile-info">
-      <h2>Desenvolvedor Back-end</h2>
-      <p>Desenvolvedor iniciante na Área de Back-end, com aprendizado rápido e pronto para o meu melhor</p>
-    </div>
-  </section>
-
-  <!-- Seção do Site -->
   <section id="quem-sou-eu">
-    <h2>Quem sou Eu</h2>
-    <p>Breve descrição sobre você e sua trajetória.</p>
+    <h2>Quem sou eu</h2>
+    <img src="/img/fotoekner.jpg" alt="Minha foto do perfil">
+    <p>Sou desenvolvedor iniciante em Ruby e estou aprendendo a criar aplicações web. Adoro resolver problemas e estou sempre em busca de aprender novas tecnologias.</p>
   </section>
-
-  <section id="experiências">
-    <h2>Experiências</h2>
+  <section id=""skills>
+    <h2>Skills</h2>
     <ul>
-      <li>Empresa X - cargo Y (2015 - 2020)</li>
-      <li>Empresa Z - cargo W (2020 - 2022)</li>
-      <li>Empresa A - cargo B (2022 - 2023)</li>
-      <li>Empresa C - cargo D (2023 - Atual)</li>
+      <li>Ruby</li>
+      <li>Sinatra</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+      <li>Git/Github</li>
     </ul>
   </section>
-
-  <section id="formacao">
-    <h2>Formação</h2>
+  <section id="projetos">
+    <h2>Projetos</h2>
     <ul>
-      <li>Graduação em Análise e Desenvolvimento de Sistemas - Universidade Cruzeuro do Sul</li>
-      <li>Cursando Engenharia de Software - Livremente</li>
+      <li>
+        <h3>Projeto 1</h3>
+        <img src="/img/projeto.jpg" alt="Imagem do Projeto 1">
+        <p>Descrição do projeto 1. Esse projeto foi desenvolvido para......</p>
+      </li>
+      <li>
+        <h3>Projeto 2</h3>
+        <img src="/img/projeto2.jpg" alt="Imagem do Projeto 2">
+        <p>Descrição do projeto 2. Este projeto é uma aplicação que......</p>
+      </li>
     </ul>
   </section>
-
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Comunicação Eficaz</li>
-      <li>Conhecimento em Direito Tributário</li>
-      <li>Gestão de Projetos</li>
-    </ul>
-  </section>
-
-  <section id="especialidades">
-    <h2>Especialidades</h2>
-    <p>Atuação especializada em contratos empresariais e contencioso cível.</p>
-    <p>Atuante também na parte de atendimento ao cliente indicando opções de desenvolvimento básico para o desmpenho de sua equipe e os demais menbros envolvidos.</p>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
+  <section id="contatos">
+    <h2>Contatos</h2>
     <p>Email: eknerph@gmail.com</p>
-    <p>Telefone: (21) 96716-8158</p>
+    <p>LinkedIn: www.linkedin.com/in/eknereaa</p>
   </section>
-
-  <footer>
-    <p>&copy; 2024 Ekner Alexandre de Almeida - Todos os direitos reservados</p>
-  </footer>
-
 </body>
 </html>
 
 
-<script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav ul li a");
 
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 70;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-
-
-
-</html>
